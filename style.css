@@ -1,0 +1,81 @@
+/*width: lebar
+height: tinggi
+padding: ukuran
+margin: jarak
+color: warna teks
+flex: urutan dari atas ke bawah
+*/
+
+/*supaya tidak ada margin atau padding di semua elemen*/
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-container: rgb(42, 91, 138);
+}
+
+.container-navbar {
+    color: white;
+    background-color: var(--color-container);
+    height: 10vh;
+}
+
+.ul-navbar { 
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    border: 1px solid black;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 35px;
+    color: white;
+    background-color: rgb(27, 74, 119);
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.container-content {
+    background-color: rgb(193, 210, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.a-li-navbar {
+    text-decoration: none;
+    color: white;
+}
+
+.a-li-navbar:hover {
+    color: rgb(68, 116, 160);
+}
+
+.img-content {
+    width: 30%;
+}
+
+.container-footer {
+    background-color: var(--color-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.h1-footer {
+    color: white;
+    font-size: 25px;
+    font-family: "Montserrat";
+}
